@@ -18,14 +18,16 @@ body {
      height: 100%;
      width: 100%;
      display: flex;
-     align-items: center;
+     flex-direction: column;
      justify-content: center;
+     align-items: center;
 }
 
 .main-content-box {
      background-color: var(--White);
      padding: 0px 30px;
      border-radius: 15px;
+     align-items: stretch;
 }
 
 .faq-header-section {
@@ -66,6 +68,11 @@ body {
      line-height: 1.5rem;
 }
 
+.answer.show {
+     display: block;
+     visibility: visible;
+}
+
 .minus-sign {
      display: none;
 }
@@ -79,8 +86,8 @@ body {
      }
 
      .main-content-box {
-          width: 60vw;
-          height: 70vh;
+          max-width: 60vw;
+          min-height: 70vh;
      }
 }
 
@@ -93,7 +100,7 @@ body {
      }
 
      .main-content-box {
-          width: 35vw;
-          height: 70vh;
+          max-width: 35vw;
+          min-height: 70vh;
      }
 }
