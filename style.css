@@ -66,13 +66,13 @@ body {
      display: none;
      color: var(--Purple-600);
      line-height: 1.5rem;
-     width: auto;
+     width: 100%;
 }
 
 .answer.show {
      display: block;
      visibility: visible;
-     width: auto;
+     width: 100%;
 }
 
 .minus-sign {
